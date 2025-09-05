@@ -20,13 +20,10 @@ public class SomaPares {
       }
       numero = numero / 10;
     }
-
-
-
     return resultado + " = " + somaPar;
   }
   
-  public static void main() {
+  public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int numero = 1;
 
