@@ -14,7 +14,7 @@ public class SomaNumeros {
       if(resultado.length() == 0) {
         resultado =  numeroTemp + ""; 
       } else {
-        resultado = resultado + " + " + numeroTemp;
+        resultado = numeroTemp + " + " + resultado;
       }
 
       numero = numero / 10;
