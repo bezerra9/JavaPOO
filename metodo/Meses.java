@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Meses {
 
   public static String calculaAno(int meses) {
-    String resultado;
+    String resultado = "";
     int resultadoAno, resultadoMeses;
     resultadoAno = meses / 12;
     resultadoMeses = meses % 12;
