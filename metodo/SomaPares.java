@@ -6,7 +6,7 @@ public class SomaPares {
   public static String calculaPar (int numero){
     String resultado = "";
     int digitoN, somaPar = 0;
-    digitoN = numero;
+
 
     while (numero != 0) {
       digitoN = numero % 10;
