@@ -14,7 +14,6 @@ public class LerPartido {
     System.out.print("Digite o numero de assinaturas minimas: ");
     numeroAssinaturasMinimas = sc.nextInt();
 
-
     for (int i=0; i < partido.length; i++) {
       partido[i] = new Partido();
       System.out.print("Código partido: ");
