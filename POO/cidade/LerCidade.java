@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class LerCidade {
   
   public static void main(){
+    int numero = 0; 
     float ideal;
     int somaPopulacao = 0;
     Scanner sc = new Scanner(System.in);
@@ -30,10 +31,12 @@ public class LerCidade {
       somaPopulacao += cidade[i].populacao;
 
       if(i==0) {
+        numero = i + 1;
         maiorDensidadeCidade = cidade[i];
       }
 
       if (maiorDensidadeCidade.densidadeDemografica() < cidade[i].densidadeDemografica()) {
+        numero = i + 1;
         maiorDensidadeCidade = cidade[i];
       }
 
@@ -49,7 +52,7 @@ public class LerCidade {
     }
 
     System.out.println("Soma das populações: " + somaPopulacao);
-    System.out.println("A cidade com maior densidade demografica = " + maiorDensidadeCidade.densidadeDemografica() + " habitantes/km² da cidade " + maiorDensidadeCidade.codigo + " " + maiorDensidadeCidade.descricao);
+    System.out.println("A cidade com maior densidade demografica = " + maiorDensidadeCidade.densidadeDemografica() + " habitantes/km² da cidade " + numero + " " + maiorDensidadeCidade.descricao);
 
     sc.close();
   }
