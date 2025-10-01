@@ -51,5 +51,6 @@ public class LerAluno {
     
 
 
+    sc.close();
   }
 }
