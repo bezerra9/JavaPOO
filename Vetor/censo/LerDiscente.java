@@ -61,7 +61,7 @@ public class LerDiscente {
       System.out.println("Carga horária total: " + discente[i].cargaHorTotal);
       System.out.println("Percentual: " + discente[i].percentual());
       System.out.println("Percentual 2: " + discente[i].percentual(cargaHorCumpridaD));
-      System.out.println("---------------------------------------");
+      System.out.println("--------------------------------------------");
     }
 
     System.out.println("Percentual médio de cumprimento foi: " + media);
