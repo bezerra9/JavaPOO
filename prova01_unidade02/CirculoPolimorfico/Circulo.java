@@ -18,7 +18,7 @@ abstract class Circulo {
   public Circulo(double raio) {
     this.raio = raio;
   }
-
+ 
   public double diametro() {
     return 2 * this.raio;
   }

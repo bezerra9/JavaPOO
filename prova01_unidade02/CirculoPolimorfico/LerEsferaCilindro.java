@@ -24,6 +24,8 @@ public class LerEsferaCilindro {
       switch(tipo) {
         case 'C':
           c1 = new Cilindro(0, 0);
+          System.out.print("Digite a altura: ");
+          ((Cilindro)c1).setAltura(sc.nextDouble());
           break;
         case 'E':
           c1 = new Esfera(0);
@@ -35,10 +37,9 @@ public class LerEsferaCilindro {
       System.out.print("Digite o raio: ");
       c1.setRaio(sc.nextDouble());
 
-      if(c1 instanceof Cilindro) {
-        System.out.print("Digite a altura: ");
-        ((Cilindro)c1).setAltura(sc.nextDouble());
-      }
+/*       if(c1 instanceof Cilindro) {
+
+      } */
 
       c1.mostrarDados();
       tipo = lerTipo(sc);

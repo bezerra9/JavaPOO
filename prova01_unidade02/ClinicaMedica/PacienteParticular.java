@@ -16,7 +16,7 @@ public class PacienteParticular extends Paciente {
     this.desconto = desconto;
   }
 
-  @Override
+@Override
   public double usarServico(double valor) {
     return super.usarServico(valor * (1 - (desconto / 100)));
   }
